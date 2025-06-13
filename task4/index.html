@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hemanth Ravva</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container" role="main">
+    <header>
+      <img src="profile.jpg" alt="Hemanth Ravva" class="profile-image" />
+      <h2>Gayatri Vidya Parishad College</h2>
+      <p class="tagline"> Passionate About Innovative Tech</p>
+    </header>
+
+    <nav aria-label="Primary navigation">
+      <button id="btn-profile" class="active" aria-controls="profile" aria-selected="true" role="tab" tabindex="0">Profile</button>
+      <button id="btn-education" aria-controls="education" aria-selected="false" role="tab" tabindex="-1">Education</button>
+      <button id="btn-skills" aria-controls="skills" aria-selected="false" role="tab" tabindex="-1">Skills</button>
+      <button id="btn-projects" aria-controls="projects" aria-selected="false" role="tab" tabindex="-1">Projects</button>
+      <button id="btn-contact" aria-controls="contact" aria-selected="false" role="tab" tabindex="-1">Contact</button>
+    </nav>
+
+    <section id="profile" role="tabpanel" aria-labelledby="btn-profile" class="active">
+      <h3 class="section-title">About Me</h3>
+      <p>I'm a passionate aspiring full-stack developer specializing in the MERN stack. My journey into tech started with a curiosity about how digital systems work, which soon evolved into a drive to build scalable, user-centric web applications. I enjoy working across both frontend and backend, from crafting responsive interfaces with React to designing efficient APIs using Node.js and Express, backed by MongoDB for data management. As a recent student, I'm excited to bring my skills into real-world projects, continue learning, and contribute meaningfully to innovative and impactful digital solutions.</p>
+    </section>
+
+    <section id="education" role="tabpanel" aria-labelledby="btn-education" tabindex="0">
+      <h3 class="section-title">Education</h3>
+      <ul>
+        <li>
+          <strong>B.Tech - Electronics and Communication & Engineering</strong><br />
+          Gayatri Vidya Parishad College, Visakhapatnam<br />
+          2022 - Present (Expected Graduation: 2026)
+        </li>
+        <li><strong>Diploma </strong><br />Sai Ganapathi polytechnic college, 2022</li>
+        <li><strong>10th</strong><br />Srigurudutta public  High School, 2020</li>
+      </ul>
+    </section>
+
+    <section id="skills" role="tabpanel" aria-labelledby="btn-skills" tabindex="0">
+      <h3 class="section-title">Technical Skills</h3>
+      <ul>
+        <li><strong>Languages:</strong> Java , Python , c++</li>
+        <li><strong>Web:</strong> HTML5, CSS3, JavaScript</li>
+        <li><strong>Tools:</strong> Git, VS Code</li>
+        <li><strong>Soft Skills:</strong> Communication, Teamwork, Problem-solving</li>
+      </ul>
+    </section>
+
+    <section id="projects" role="tabpanel" aria-labelledby="btn-projects" tabindex="0">
+      <h3 class="section-title">Projects</h3>
+      <div class="projects-grid">
+        <article class="project-card" tabindex="0">
+          <h4 class="project-title">Portfolio Website</h4>
+          <p class="project-desc">Developed a personal website using HTML, CSS, and JavaScript.</p>
+          <a href="#" class="project-link">View Demo</a>
+        </article>
+        <article class="project-card" tabindex="0">
+          <h4 class="project-title">Basic To-Do App</h4>
+          <p class="project-desc">Created a to-do list app with vanilla JavaScript.</p>
+          <a href="#" class="project-link">View Demo</a>
+        </article>
+        <article class="project-card" tabindex="0">
+          <h4 class="project-title">Calculator</h4>
+          <p class="project-desc">Built a calculator for basic arithmetic operations.</p>
+          <a href="#" class="project-link">View Demo</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" role="tabpanel" aria-labelledby="btn-contact" tabindex="0">
+      <h3 class="section-title">Contact Me</h3>
+      <form class="contact-form" id="contactForm" novalidate>
+        <div class="form-group">
+          <label for="nameInput">Name</label>
+          <input id="nameInput" name="name" type="text" required />
+        </div>
+        <div class="form-group">
+          <label for="emailInput">Email</label>
+          <input id="emailInput" name="email" type="email" required />
+        </div>
+        <div class="form-group">
+          <label for="messageInput">Message</label>
+          <textarea id="messageInput" name="message" required rows="5"></textarea>
+        </div>
+        <button type="submit" class="submit-btn">Send Message</button>
+      </form>
+    </section>
+  </div>
+
+  <footer>
+    &copy; 2024 Gayatri Vidya Parishad Student Portfolio. All rights reserved.
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
